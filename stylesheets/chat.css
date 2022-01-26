@@ -1,0 +1,290 @@
+.chat-container {
+  width : 55%;
+  max-width: 650px; /*600 or 650 */
+  /*margin-top: 3rem;*/
+  /*margin: 7rem auto 7rem auto;*/
+  /*border: 1px solid black;*/
+  margin-top: -5.5rem;/*3.8 to 7 to 8 to 6 to 8*/
+  height: 49.5vh;/*68 to 57*/
+  padding-bottom: 3rem;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition-property: all;
+  transition-duration: 1s;
+
+}
+
+@media screen and (min-width: 1px) and (max-width: 650px) {
+    .chat-container {
+      width: 100%;
+      margin-top: 3rem;
+      height: 80vh;/*68 to 57*/
+      /*background-color:blue;*/
+
+    }
+  }
+@media screen and (min-width: 651px) and (max-width: 800px) {
+    .chat-container {
+      width: 90%;
+
+    }
+	}
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    .chat-container {
+      width: 100%;
+    }
+	}
+
+  /*iPhone 6 and iPhone 6+ portrait and landscape*/
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px){
+    .chat-container {
+      width: 100%;
+      max-width: 1000px;
+      margin-top: 3rem;/*3.8 to 7 to 8 to 6 to 8*/
+      height: 80vh;/*68 to 57*/
+      /*background-color:green;*/
+    }
+	}
+@media only screen and (max-width: 320px) {
+  .chat-container {
+    width: 90%;
+    }
+  }
+
+
+.header #desc {
+  font-size: 1.3rem;
+  text-align: right;
+  /*float: right;*/
+  margin-top: -2.1rem;
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 650px) {
+  .header #desc {
+    display :none;
+    }
+}
+
+/*iPhone 6 and iPhone 6+ portrait and landscape*/
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px){
+  .header #desc {
+    display :none;
+    }
+}
+
+
+
+.oscar-chats, .me-chat {
+  text-align: left;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+
+  font-size: 1.7rem;/*1.25 or 1.4*/ /*1.4 --> 1.9*/ /*1.8 or 1.7 */
+  line-height: 2.6rem; /* 2 --> 2.6*/
+  width: auto;
+  /*margin: 4rem auto;*/
+}
+
+@media screen and (min-width: 1px) and (max-width: 650px) {
+    .oscar-chats, .me-chat {
+      font-size: 1.5rem;/*1.25 or 1.4*/ /*1.4 --> 1.9*/ /*1.8 or 1.7 */
+    }
+  }
+
+.oscar-chats {
+  /*color : #6D3CFB;*/
+  color : #000000;
+  transition-property: all;
+  transition-duration: 0.8s;
+  margin-left: 8.5rem;
+}
+
+.me-chat {
+  text-align: right;
+  margin-right: 8.5rem;
+}
+.blank-space {
+  width: 3.5rem;
+  height: 5.3rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.icon {
+  width: 3.5rem;
+  height: 4rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.oscar {
+  float: left;
+  clear: both;
+  /*background-color: red;*/
+  background-image: url('../images/oscar-icon.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.me {
+  /*background-color: blue;*/
+  float: right;
+  clear : both;
+  background-image: url('../images/me-1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+#typing-container {
+  max-width: 650px; /*600 or 650 */
+  width: 55%;
+  height: 4rem;
+  position: fixed;
+  bottom: 13rem; /*10 to 13*/
+  /*border: 1px solid white;*/
+
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+
+}
+
+@media screen and (min-width: 1500px) {
+	#typing-container {
+		bottom: 20rem;
+	}
+}
+
+@media screen and (min-width: 1px) and (max-width: 650px) {
+    #typing-container {
+      width: 100%;
+    }
+  }
+@media screen and (min-width: 651px) and (max-width: 800px) {
+    #typing-container {
+      width: 90%;
+
+    }
+	}
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    #typing-container {
+      width: 100%;
+    }
+	}
+
+  /*iPhone 6 and iPhone 6+ portrait and landscape*/
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px){
+    #typing-container {
+      width: 100%;
+      max-width: 1000px;
+    }
+	}
+
+
+
+input {
+  font-size : 1.3rem;
+  transition: all 0.2s ease-in-out;
+  height: 3rem;
+  background-color: none;
+  /*border: 1px solid black;*/
+
+  border-style: solid;
+  border: 0px solid white;
+  border-bottom: 2px solid #000000;
+
+  margin: 0 2.3rem;
+  width: 68%; /* 82 to 50*/
+  padding: 0 0.8rem;
+  /*float: left;*/
+  display: inline-block;
+}
+
+@media screen and (min-width: 1px) and (max-width: 650px) {
+    input {
+      width: 54%;
+    }
+  }
+
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px){
+    input {
+      /*width: 55%;*/
+      border-bottom: 0.3rem solid #000000;
+
+    }
+	}
+#send, #send img {
+  width : 8rem;
+  height: 3rem;
+  border: 2px solid black;
+  display: inline-block;
+  vertical-align: bottom;
+  float: right;
+  margin-right: 2.5rem;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  /*float: right;*/
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+#send:hover {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.oscar-link:link, .oscar-link:visited {
+  font-weight: bold;
+  color: #6D3CFB;
+  font-style: italic;
+
+  /**/
+  width : auto;
+  padding: 0 2rem 0 2rem;
+  margin-top: 1rem;
+  height: 3rem;
+  border: 2px solid #6D3CFB;
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  /*float: right;*/
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.oscar-link:hover, .oscar-link:active {
+  font-weight: bold;
+  color: #6D3CFB;
+  font-style: italic;
+  text-decoration: underline;
+
+  /**/
+  background-color: #6D3CFB;
+  color: #ffffff;
+  cursor: pointer;
+}
+.oscar-linkbox {
+  display: block;
+  position: relative;
+  z-index: 100;
+  margin-left: 8.5rem;
+}
+
+.oscar-image {
+  display: block;
+  position: relative;
+  z-index: 100;
+  width:300px;
+  margin-left: 8.5rem;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="ko"  xml:lang="ko">
+	<meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<head>
+	<title>Tim the Librarian</title>
+
+ 	<link rel="stylesheet" type="text/css" href="stylesheets/basic.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/chat.css">
+  <script src="javascripts/jquery-3.1.0.js"></script>
+  <script src="javascripts/script.js"></script>
+  <script src="javascripts/config.js"></script>
+  <script src="javascripts/apiai.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+	<link rel="manifest" href="fav/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+
+
+ </head>
+<body>
+<div class = "container">
+  <div class = "header">
+		<a href =""><p id ="title"><img src ="images/logo.svg"></p></a>
+    <p id ="desc">Struggling to talk with him? Just say “help” to show the examples.</p>
+  </div>
+  <div class = "contents">
+    <div class = "chat-container">
+      <!-- <div class ="blank-space"></div> -->
+      <div class ="icon oscar"></div>
+
+      <div class ="oscar-chats">Hi, I'm Tim, the librarian bot built with Api.ai.</div>
+      <div class ="oscar-chats">You can ask me anything about the library such as finding books...</div>
+      <div class ="oscar-chats">If you struggle with talking to me, just say "Help" or "Examples"! Then I'll help you!</div>
+
+
+
+    </div>
+    <div id = "typing-container">
+      <input id ="input"></input>
+      <div id ="send" onclick = "send();">Send</div>
+      </div>
+  </div>
+
+  <!-- <div id = "emojis"> -->
+    <div class = "emoji" onclick ="red();"><img src = "images/red.png"></div>
+    <div class = "emoji" onclick ="green();"><img src = "images/green.png"></div>
+    <div class = "emoji" onclick ="white();"><img src = "images/white.png"></div>
+    <a href ="https://github.com/erinhye" target="_blank"><div class = "emoji"><img src = "images/erin.png"></div></a>
+  <!-- </div> -->
+
+  </div>
+  <div id = "footer-container">
+    <div id = "footer">
+      <p>He was created and designed by Hye Erin Suh</p>
+      <p><a href ="https://github.com/erinhye/Timothy" target="_blank">Webhook repository</a> | <a href ="https://github.com/erinhye/tim" target="_blank">Client repository</a></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
